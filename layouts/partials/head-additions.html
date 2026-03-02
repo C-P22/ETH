@@ -1,3 +1,3 @@
-{{ with resources.Get "scss/custom.scss" | css.Sass (dict "transpiler" "dartsass") }}
+{{ with resources.Get "scss/custom.scss" | css.Sass (dict "transpiler" "libsass") }}
   <link rel="stylesheet" href="{{ .RelPermalink }}">
 {{ end }}
